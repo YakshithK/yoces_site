@@ -31,17 +31,14 @@
 
 .content {
     max-width: 50%;
-    margin: 30px;
 }
 
 .date-location {
-    font-size: 4rem;
     font-weight: bold;
     font-family: 'Montserrat-Medium';
 }
 
 .title {
-    font-size: 8rem;
     font-weight: bold;
     margin: 20px 0;
     font-family: 'Montserrat-Bold';
@@ -50,7 +47,6 @@
 
 
 .blinking-cursor {
-    font-size: 8rem;
     animation: blink 1s infinite;
     font-weight: 900;
 }
@@ -62,14 +58,12 @@
 }
 
 .subtitle {
-    font-size: 3rem;
     margin-bottom: 40px;
     font-family: 'Montserrat-Extralight';
     color: #D7D9DD;
 }
 
 .coming-soon {
-    font-size: 2.5rem;
     font-family: 'Montserrat-Semibold';
     color: #B9BBC1;
 }
@@ -81,4 +75,82 @@
 .moon-image img {
     width: 100%;
     height: auto;
+}
+
+@media (max-height: 586px) {
+    .date-location {
+        font-size: 35px;
+    }
+
+    .title {
+        font-size: 100px;
+    }
+
+    .blinking-cursor{
+        font-size: 100px;
+    }
+
+    .subtitle {
+        font-size: 35px;
+    }
+
+    .coming-soon {
+        font-size: 25px;
+    }
+}
+
+@media (min-height: 586px) {
+    .date-location {
+        font-size: 4rem;
+    }
+
+    .title {
+        font-size: 8rem;
+    }
+
+    .blinking-cursor{
+        font-size: 8rem;
+    }
+
+    .subtitle {
+        font-size: 3rem;
+    }
+
+    .coming-soon {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .date-location {
+        font-size: 2rem;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .blinking-cursor {
+        font-size: 3rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+
+    .coming-soon {
+        font-size: 1rem;
+    }
+
+    .moon-image {
+        max-width: 80%;
+    }
+
+    .content {
+        max-width: 80%;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
 }
