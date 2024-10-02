@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('./assets/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Extralight';
+    src: url('./assets/Montserrat-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('./assets/Montserrat-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Semibold';
+    src: url('./assets/Montserrat-SemiBold.ttf') format('truetype');
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./assets/starry-sky.jpg');
+    background-size: cover;
+    color: white;
+    padding: 0 50px;
+}
+
+.content {
+    max-width: 50%;
+    margin: 30px;
+}
+
+.date-location {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: 'Montserrat-Medium';
+}
+
+.title {
+    font-size: 8rem;
+    font-weight: bold;
+    margin: 20px 0;
+    font-family: 'Montserrat-Bold';
+    color: #E9EBEE;
+}
+
+
+.blinking-cursor {
+    font-size: 8rem;
+    animation: blink 1s infinite;
+    font-weight: 900;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.subtitle {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    font-family: 'Montserrat-Extralight';
+    color: #D7D9DD;
+}
+
+.coming-soon {
+    font-size: 2.5rem;
+    font-family: 'Montserrat-Semibold';
+    color: #B9BBC1;
+}
+
+.moon-image {
+    max-width: 40%;
+}
+
+.moon-image img {
+    width: 100%;
+    height: auto;
+}
